@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用サイト｜株式会社しごとば（Shigoto-BA）｜IT機器運用×ロジスティクス</title>
+<meta name="description" content="株式会社しごとば（Shigoto-BA）の採用サイト。物流×ITという希少な経験で市場価値を伸ばす。年間休日120日・残業少なめ・カジュアル面談歓迎。落ち着いた環境で専門性を深め、長く働けるキャリアを。">
+<meta property="og:title" content="採用サイト｜株式会社しごとば（Shigoto-BA）">
+<meta property="og:description" content="物流×ITという希少な経験で、市場価値を伸ばしていく。落ち着いたチームで専門性を深められる環境です。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2E97D4;
+  --blue-deep:#1E6FA8;
+  --blue-dark:#15517E;
+  --sky:#6FC0EC;
+  --sky-soft:#EAF6FD;
+  --sky-soft2:#F4FAFE;
+  --amber:#FFB454;
+  --ink:#23394B;
+  --ink-soft:#5B7184;
+  --line:#E2EEF6;
+  --white:#ffffff;
+  --shadow-sm:0 2px 8px rgba(30,111,168,.06);
+  --shadow:0 10px 30px rgba(30,111,168,.10);
+  --shadow-lg:0 22px 50px rgba(30,111,168,.16);
+  --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.en{font-family:'Poppins',sans-serif;letter-spacing:.04em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+svg{display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.sec{padding:84px 0}
+.sec-tight{padding:60px 0}
+
+/* ===== ヘッダー ===== */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;flex-direction:column;line-height:1;font-weight:900}
+.logo b{font-size:19px;color:var(--ink)}
+.logo span{font-size:11px;color:var(--blue);font-weight:700;letter-spacing:.18em;margin-top:3px}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:var(--ink-soft);transition:.2s}
+.nav-links a:hover{color:var(--blue)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--blue);color:#fff;font-weight:700;
+  padding:12px 24px;border-radius:999px;font-size:14px;
+  box-shadow:0 8px 20px rgba(46,151,212,.30);
+  transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(46,151,212,.40)}
+.btn-amber{background:var(--amber);box-shadow:0 8px 20px rgba(255,180,84,.35);color:#5a3a00}
+.btn-amber:hover{box-shadow:0 12px 26px rgba(255,180,84,.45)}
+.btn-ghost{background:#fff;color:var(--blue);border:2px solid var(--blue);box-shadow:none}
+.btn-ghost:hover{background:var(--sky-soft)}
+.nav .btn{padding:10px 20px}
+.menu-toggle{display:none;background:none;border:none;font-size:26px;color:var(--blue);cursor:pointer;line-height:1}
+
+/* ===== ヒーロー ===== */
+.hero{position:relative;background:linear-gradient(160deg,#EAF6FD 0%,#D7EEFB 48%,#C3E5F9 100%);overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.5}
+.hero::before{width:380px;height:380px;background:radial-gradient(circle,#fff 0%,rgba(255,255,255,0) 70%);top:-90px;right:-60px}
+.hero::after{width:300px;height:300px;background:radial-gradient(circle,rgba(111,192,236,.6) 0%,rgba(111,192,236,0) 70%);bottom:-80px;left:-40px}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:74px 0 84px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--blue-deep);font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;box-shadow:var(--shadow-sm);margin-bottom:22px;letter-spacing:.04em}
+.hero h1{font-size:46px;font-weight:900;line-height:1.32;letter-spacing:.01em}
+.hero h1 .hl{color:var(--blue);position:relative}
+.hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:12px;background:rgba(255,180,84,.45);z-index:-1;border-radius:4px}
+.hero p.lead{margin-top:22px;font-size:16.5px;color:var(--ink-soft);font-weight:500;max-width:480px}
+.hero-cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.hero-visual{position:relative}
+.hero-card{background:#fff;border-radius:26px;padding:26px;box-shadow:var(--shadow-lg)}
+.hero-card .pic{height:180px;border-radius:18px;background:linear-gradient(135deg,var(--blue) 0%,var(--sky) 100%);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-card .pic svg{width:150px;height:auto}
+.hero-card .pic .tag{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.92);color:var(--blue-deep);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.hero-card h4{margin-top:18px;font-size:16px;font-weight:700}
+.hero-card p{font-size:13.5px;color:var(--ink-soft);margin-top:6px}
+.float-pill{position:absolute;background:#fff;border-radius:16px;padding:11px 18px;box-shadow:var(--shadow);font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px}
+.float-pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.float-pill.p1{top:-18px;left:-26px;color:var(--blue-deep)}
+.float-pill.p2{bottom:-16px;right:-18px;color:#b06a00}
+.float-pill.p2::before{background:var(--amber)}
+
+/* 波 */
+.wave{display:block;width:100%;height:60px;margin-top:-1px}
+
+/* ===== 数字 ===== */
+.stat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:40px}
+.stat{background:var(--sky-soft2);border:1px solid var(--line);border-radius:18px;padding:22px 14px;text-align:center;transition:.25s}
+.stat:hover{transform:translateY(-4px);box-shadow:var(--shadow);background:#fff}
+.stat .num{font-family:'Poppins',sans-serif;font-size:30px;font-weight:700;color:var(--blue);line-height:1.1}
+.stat .num small{font-size:15px;font-weight:600}
+.stat .lbl{font-size:12.5px;color:var(--ink-soft);margin-top:6px;font-weight:500}
+
+/* ===== セクション見出し ===== */
+.eyebrow{display:inline-block;font-family:'Poppins',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--blue);background:var(--sky-soft);padding:6px 16px;border-radius:999px;margin-bottom:16px}
+.sec-title{font-size:32px;font-weight:900;line-height:1.4}
+.sec-title .sm{display:block;font-size:15px;color:var(--ink-soft);font-weight:500;margin-top:10px}
+.center{text-align:center}
+.center .eyebrow{margin-left:auto;margin-right:auto}
+
+/* ===== about ===== */
+.about{background:var(--sky-soft2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:40px}
+.about-text p{margin-bottom:18px;color:#3a5161}
+.about-text strong{color:var(--blue-deep)}
+.about-visual{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.flow-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.flow-chip{background:var(--sky-soft);color:var(--blue-deep);font-weight:700;font-size:13px;padding:12px 16px;border-radius:12px;text-align:center}
+.flow-arr{color:var(--sky);font-weight:900}
+.about-visual h4{text-align:center;margin-bottom:18px;font-size:15px;color:var(--ink-soft)}
+
+/* ===== 理由 ===== */
+.reason-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.reason{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 26px;box-shadow:var(--shadow-sm);transition:.25s;position:relative}
+.reason:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.reason .ic{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,var(--sky-soft),#fff);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);margin-bottom:18px;color:var(--blue)}
+.reason .ic svg{width:30px;height:30px}
+.reason h3{font-size:18px;font-weight:900;margin-bottom:10px}
+.reason h3 em{font-style:normal;color:var(--blue)}
+.reason p{font-size:14px;color:var(--ink-soft)}
+.reason .no{position:absolute;top:22px;right:24px;font-family:'Poppins';font-weight:700;font-size:34px;color:var(--sky-soft)}
+
+/* ===== values ===== */
+.values{background:linear-gradient(160deg,#1E6FA8,#15517E);color:#fff}
+.values .eyebrow{background:rgba(255,255,255,.14);color:#cfeafb}
+.values .sec-title{color:#fff}
+.values .sec-title .sm{color:#bcdcf0}
+.val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.val{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:26px 22px;transition:.25s}
+.val:hover{background:rgba(255,255,255,.14);transform:translateY(-4px)}
+.val .ic{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#cfeafb}
+.val .ic svg{width:26px;height:26px}
+.val h4{font-size:17px;font-weight:700;margin-bottom:8px}
+.val p{font-size:13.5px;color:#d6e9f6}
+.val-lead{max-width:680px;margin:24px auto 0;text-align:center;color:#d6e9f6;font-size:15px}
+
+/* ===== 先輩の声 ===== */
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.voice{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm);transition:.25s}
+.voice:hover{box-shadow:var(--shadow)}
+.voice-head{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.voice-ava{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;flex-shrink:0;color:#fff}
+.voice-meta b{display:block;font-size:16px}
+.voice-meta span{font-size:13px;color:var(--ink-soft)}
+.voice-q{font-size:16px;font-weight:700;color:var(--blue-deep);margin-bottom:10px;line-height:1.55}
+.voice p{font-size:14px;color:#46606f}
+
+/* ===== 1日の流れ ===== */
+.day{background:var(--sky-soft2)}
+.day-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}
+.day-card{background:#fff;border-radius:18px;padding:26px 22px;box-shadow:var(--shadow-sm);position:relative}
+.day-card .t{font-family:'Poppins';font-weight:700;color:var(--blue);font-size:20px}
+.day-card .bar{width:34px;height:3px;border-radius:3px;background:var(--sky);margin:14px 0}
+.day-card h5{font-size:15px;font-weight:700;margin-bottom:6px}
+.day-card p{font-size:13px;color:var(--ink-soft)}
+
+/* ===== 募集要項 ===== */
+.jobs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.job{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm);transition:.25s;display:flex;flex-direction:column}
+.job:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.job .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.job .tag{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:999px;background:var(--sky-soft);color:var(--blue-deep)}
+.job .tag.new{background:#FFF1DC;color:#b06a00}
+.job h3{font-size:20px;font-weight:900;margin-bottom:6px}
+.job .role{font-size:13px;color:var(--ink-soft);margin-bottom:18px}
+.job dl{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:13.5px;margin-bottom:20px}
+.job dt{color:var(--blue);font-weight:700;white-space:nowrap}
+.job dd{color:#46606f}
+.job .pay{font-family:'Poppins';font-weight:700;color:var(--blue-deep);font-size:22px;margin-bottom:4px}
+.job .pay small{font-size:13px;font-weight:600;font-family:'Noto Sans JP'}
+.job .btn{margin-top:auto;justify-content:center}
+
+/* ===== 応募の流れ ===== */
+.steps{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap}
+.step{flex:1;min-width:180px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 22px;text-align:center;position:relative;box-shadow:var(--shadow-sm)}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;font-family:'Poppins';font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h5{font-size:15px;font-weight:700;margin-bottom:6px}
+.step p{font-size:12.5px;color:var(--ink-soft)}
+.step:not(:last-child)::after{content:"";position:absolute;right:-11px;top:50%;width:9px;height:9px;border-top:2px solid var(--sky);border-right:2px solid var(--sky);transform:translateY(-50%) rotate(45deg);z-index:2}
+
+/* ===== FAQ ===== */
+.faq{background:var(--sky-soft2)}
+.faq-list{max-width:760px;margin:40px auto 0;display:flex;flex-direction:column;gap:14px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.faq-q{padding:20px 24px;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;gap:14px;list-style:none}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q .qm{width:28px;height:28px;border-radius:8px;background:var(--sky-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;font-family:'Poppins'}
+.faq-q .arrow{margin-left:auto;color:var(--sky);transition:.25s;width:14px;height:14px}
+details[open] .faq-q .arrow{transform:rotate(180deg)}
+.faq-a{padding:0 24px 22px 66px;font-size:14px;color:#46606f}
+
+/* ===== 会社概要 ===== */
+.company-table{margin-top:40px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line)}
+.company-table dl{display:grid;grid-template-columns:200px 1fr}
+.company-table dt{background:var(--sky-soft);color:var(--blue-deep);font-weight:700;padding:18px 24px;font-size:14px;border-bottom:1px solid var(--white)}
+.company-table dd{background:#fff;padding:18px 24px;font-size:14px;color:#46606f;border-bottom:1px solid var(--line)}
+
+/* ===== CTA / フォーム ===== */
+.cta-form{background:linear-gradient(160deg,#2E97D4,#1E6FA8);color:#fff;position:relative;overflow:hidden}
+.cta-form::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 70%);top:-120px;right:-80px}
+.form-wrap{position:relative;z-index:2;max-width:720px;margin:0 auto}
+.form-wrap .eyebrow{background:rgba(255,255,255,.16);color:#eaf6fd}
+.form-wrap .sec-title{color:#fff}
+.form-wrap>.center>p{color:#dcefff;margin-top:6px}
+.form-card{background:#fff;border-radius:var(--radius);padding:38px;box-shadow:var(--shadow-lg);margin-top:34px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{margin-bottom:18px;text-align:left}
+.field.full{grid-column:1/-1}
+.field label{display:block;font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:7px}
+.field label .req{color:#e0683c;font-size:12px;margin-left:6px}
+.field input,.field select,.field textarea{
+  width:100%;border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;
+  font-family:inherit;font-size:14.5px;color:var(--ink);background:var(--sky-soft2);transition:.2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(46,151,212,.12)}
+.field textarea{resize:vertical;min-height:120px}
+.form-submit{text-align:center;margin-top:8px}
+.form-submit .btn{font-size:16px;padding:16px 44px}
+.form-note{font-size:12px;color:var(--ink-soft);text-align:center;margin-top:16px}
+.form-msg{display:none;text-align:center;padding:14px;border-radius:12px;background:var(--sky-soft);color:var(--blue-deep);font-weight:700;font-size:14px;margin-bottom:18px}
+
+/* ===== footer ===== */
+footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-logo b{font-size:20px;color:#fff;font-weight:900;display:block}
+.foot-logo span{font-size:12px;color:var(--sky);letter-spacing:.16em;font-family:'Poppins'}
+.foot-logo p{font-size:13px;margin-top:14px;max-width:340px;color:#9fb4c4}
+.foot-links{display:flex;gap:40px;flex-wrap:wrap}
+.foot-col h6{font-size:12px;color:var(--sky);letter-spacing:.1em;margin-bottom:14px;font-family:'Poppins';font-weight:600}
+.foot-col a{display:block;font-size:13.5px;margin-bottom:10px;color:#cdd9e3;transition:.2s}
+.foot-col a:hover{color:#fff}
+.copy{text-align:center;font-size:12px;color:#7f96a8;margin-top:26px}
+
+/* ===== カルーセル ===== */
+.carousel{position:relative;margin-top:44px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.carousel-track{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.slide{min-width:100%;position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,var(--blue),var(--sky))}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+.slide .cap{position:absolute;left:0;right:0;bottom:0;padding:46px 28px 20px;background:linear-gradient(to top,rgba(15,40,60,.55),transparent);color:#fff;font-size:14px;font-weight:600;letter-spacing:.02em}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);color:var(--blue-deep);z-index:3;transition:background .2s,transform .2s}
+.carousel-btn:hover{background:#fff;transform:translateY(-50%) scale(1.06)}
+.carousel-btn svg{width:20px;height:20px}
+.carousel-btn.prev{left:16px}
+.carousel-btn.next{right:16px}
+.carousel-dots{display:flex;gap:8px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--line);border:none;cursor:pointer;transition:.25s;padding:0}
+.dot.active{background:var(--blue);width:26px;border-radius:6px}
+@media(max-width:560px){.slide{aspect-ratio:4/3}.carousel-btn{width:38px;height:38px}}
+
+/* ===== reveal ===== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+
+/* ===== レスポンシブ ===== */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:30px;padding:54px 0 60px}
+  .hero h1{font-size:34px}
+  .hero-visual{max-width:380px;margin:0 auto}
+  .stat-grid{grid-template-columns:repeat(3,1fr)}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .reason-grid,.val-grid{grid-template-columns:1fr}
+  .voice-grid,.jobs-grid{grid-template-columns:1fr}
+  .day-grid{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  .company-table dl{grid-template-columns:1fr}
+  .company-table dt{border-bottom:none}
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:20px 22px;gap:16px;box-shadow:var(--shadow);border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .menu-toggle{display:block}
+  .step:not(:last-child)::after{display:none}
+  .sec{padding:62px 0}
+  .sec-title{font-size:26px}
+}
+@media(max-width:560px){
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .day-grid{grid-template-columns:1fr}
+  .hero h1{font-size:29px}
+}
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><b>株式会社しごとば</b><span class="en">SHIGOTO-BA</span></a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#about">事業のこと</a>
+      <a href="#reason">働く環境</a>
+      <a href="#voice">社員の声</a>
+      <a href="#jobs">募集要項</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#entry" class="btn">エントリー</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニュー">≡</button>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="reveal on">
+      <span class="hero-badge">中途・キャリア採用</span>
+      <h1>物流×ITという希少な経験で、<br><span class="hl">市場価値</span>を伸ばす。</h1>
+      <p class="lead">倉庫業務とIT機器運用をかけ合わせた、ほかにはない仕事。落ち着いたチームで専門性を深めながら、長く働けるキャリアを築けます。</p>
+      <div class="hero-cta">
+        <a href="#jobs" class="btn">募集をみる</a>
+        <a href="#entry" class="btn btn-amber">カジュアル面談を申し込む</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal on">
+      <div class="hero-card">
+        <div class="pic">
+          <span class="tag">SUPPORT × LOGISTICS</span>
+          <svg viewBox="0 0 150 96" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="12" y="44" width="50" height="40" rx="3"/>
+            <path d="M12 56h50M37 44v40"/>
+            <path d="M24 44l4-8h18l4 8"/>
+            <rect x="78" y="26" width="58" height="38" rx="3"/>
+            <path d="M96 64v8M86 80h42"/>
+            <path d="M90 38h34M90 46h22"/>
+          </svg>
+        </div>
+        <h4>IT機器運用 × ロジスティクス</h4>
+        <p>PC・通信機器を「あずかり、整え、届ける」。社会の基盤を支える仕事です。</p>
+      </div>
+      <div class="float-pill p1">年間休日120日</div>
+      <div class="float-pill p2">残業 月平均20h</div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M0,30 C240,60 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z"></path></svg>
+</section>
+
+<!-- 数字 -->
+<section class="sec-tight">
+  <div class="wrap center">
+    <span class="eyebrow reveal">NUMBERS</span>
+    <h2 class="sec-title reveal">数字でみる、しごとば</h2>
+    <div class="stat-grid">
+      <div class="stat reveal"><div class="num">2012<small>年</small></div><div class="lbl">設立</div></div>
+      <div class="stat reveal"><div class="num">約20<small>名</small></div><div class="lbl">従業員数</div></div>
+      <div class="stat reveal"><div class="num">120<small>日</small></div><div class="lbl">年間休日</div></div>
+      <div class="stat reveal"><div class="num">20<small>h</small></div><div class="lbl">残業<br>月平均</div></div>
+      <div class="stat reveal"><div class="num">2<small>回</small></div><div class="lbl">賞与<br>(年)</div></div>
+      <div class="stat reveal"><div class="num">9-18<small>時</small></div><div class="lbl">勤務時間</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">ABOUT</span>
+      <h2 class="sec-title reveal">事業のこと<span class="sm">わたしたちの仕事を、ありのままにお伝えします。</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>企業が使うPC・タブレット・通信機器。その保管、設定、配送、回収といった運用には、想像以上に細やかな管理が求められます。</p>
+        <p>わたしたち<strong>しごとば</strong>は、その一連の流れをまるごと引き受け、確かな品質で整えてお返しする会社です。モノを扱う「物流」と、機器をセットアップする「IT」を掛け合わせた、希少性の高い領域で事業を展開しています。</p>
+        <p>取引先は大手企業や官公庁が中心。<strong>社会の基盤を支える</strong>仕事です。新潟の総合物流グループ「マルソーグループ」の一員として経営基盤も安定しており、腰を据えて専門性を磨ける環境があります。</p>
+      </div>
+      <div class="about-visual reveal">
+        <h4>業務の流れ（一例）</h4>
+        <div class="flow-row">
+          <span class="flow-chip">あずかる</span>
+          <span class="flow-arr">→</span>
+          <span class="flow-chip">設定する</span>
+          <span class="flow-arr">→</span>
+          <span class="flow-chip">検査する</span>
+          <span class="flow-arr">→</span>
+          <span class="flow-chip">とどける</span>
+          <span class="flow-arr">→</span>
+          <span class="flow-chip">回収・再利用</span>
+        </div>
+        <p style="font-size:13px;color:var(--ink-soft);margin-top:20px;text-align:center">各工程が手順化されており、経験を積みながら担当範囲を広げていけます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 働く環境 / 理由 -->
+<section class="sec" id="reason">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">ENVIRONMENT</span>
+      <h2 class="sec-title reveal">しごとばで、着実に力を伸ばせる理由<span class="sm">腰を据えて働ける環境を、3つの視点から。</span></h2>
+    </div>
+    <div class="reason-grid">
+      <div class="reason reveal">
+        <span class="no en">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 9h2M9 13h6M9 17h6"/></svg></div>
+        <h3>体系化された<em>業務プロセス</em></h3>
+        <p>業務はISO9001に準拠して手順化されています。属人化を避け、誰が見ても判断できる基準が整っているため、迷わず仕事を進められます。</p>
+      </div>
+      <div class="reason reveal">
+        <span class="no en">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.4 6H15a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h6.6"/></svg></div>
+        <h3>個別に設計する<em>立ち上がり</em></h3>
+        <p>入社後の習熟プランを一人ひとりに合わせて設計します。これまでのご経験を踏まえ、無理なく担当領域を広げていける流れを用意しています。</p>
+      </div>
+      <div class="reason reveal">
+        <span class="no en">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17.5" cy="10" r="2.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M15 19a4.5 4.5 0 0 1 5.5-3.6"/></svg></div>
+        <h3>部署を越えた<em>チーム連携</em></h3>
+        <p>部署の垣根を越えて助け合う文化があります。相談しやすい距離感のある組織なので、課題を一人で抱え込まずに進められます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 職場の風景（カルーセル） -->
+<section class="sec" id="workplace" style="background:var(--sky-soft2)">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">WORKPLACE</span>
+      <h2 class="sec-title reveal">職場の風景<span class="sm">いっしょに働くメンバーと、オフィスの雰囲気をご紹介します。</span></h2>
+    </div>
+    <div class="carousel reveal" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="slide"><img src="images/people-1.jpg" alt="オフィスで働くメンバー" loading="lazy" onerror="this.style.display='none'"><div class="cap">明るい雰囲気のオフィス</div></div>
+        <div class="slide"><img src="images/people-2.jpg" alt="業務に向き合うメンバー" loading="lazy" onerror="this.style.display='none'"><div class="cap">落ち着いて業務に向き合う</div></div>
+        <div class="slide"><img src="images/people-3.jpg" alt="チームを支えるメンバー" loading="lazy" onerror="this.style.display='none'"><div class="cap">チームを支えるメンバー</div></div>
+        <div class="slide"><img src="images/people-4.jpg" alt="現場をリードする社員" loading="lazy" onerror="this.style.display='none'"><div class="cap">現場をリードする先輩社員</div></div>
+        <div class="slide"><img src="images/people-5.jpg" alt="幅広い業務を担うスタッフ" loading="lazy" onerror="this.style.display='none'"><div class="cap">幅広い業務を担うスタッフ</div></div>
+        <div class="slide"><img src="images/people-6.jpg" alt="現場での打ち合わせ" loading="lazy" onerror="this.style.display='none'"><div class="cap">現場での打ち合わせの様子</div></div>
+        <div class="slide"><img src="images/people-7.jpg" alt="しごとばのチーム" loading="lazy" onerror="this.style.display='none'"><div class="cap">しごとばのチーム</div></div>
+      </div>
+      <button class="carousel-btn prev" id="carouselPrev" aria-label="前へ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="carousel-btn next" id="carouselNext" aria-label="次へ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+
+<!-- values -->
+<section class="sec values">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">OUR VALUES</span>
+      <h2 class="sec-title reveal">わたしたちが大切にしていること</h2>
+      <p class="val-lead reveal">社名の「しごとば（Shigoto-BA）」には、<b>しごと（Shigoto）に向き合い、お客さまの“頭脳（Brain）”や“代理人（Agent）”として頼られる存在を目指す</b>という想いを込めています。この価値観を、5つの言葉で表しています。</p>
+    </div>
+    <div class="val-grid">
+      <div class="val reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/></svg></div><h4>三方よし</h4><p>お客さま・社会・自分たち。三者すべてにとって良い形を、常に追求します。</p></div>
+      <div class="val reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.5 6 .6-4.5 4 1.3 5.9L12 21l-5.4 -1.9 1.3-5.9-4.5-4 6-.6z"/></svg></div><h4>プロフェッショナル</h4><p>知識と技術を磨き、最良のパフォーマンスを発揮するための準備と努力を続けます。</p></div>
+      <div class="val reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>言い訳のない品質</h4><p>定めた手順を守り、安心して任せていただける品質を、企画から納品後まで貫きます。</p></div>
+      <div class="val reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17.5" cy="10" r="2.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M15 19a4.5 4.5 0 0 1 5.5-3.6"/></svg></div><h4>チームワーク・仲間</h4><p>会社は仲間の集まり。個人の限界はチームで、チームの限界は会社で越えていきます。</p></div>
+      <div class="val reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4"/><path d="M6 4h11l-2.2 3.3L17 11H6"/></svg></div><h4>チャレンジ</h4><p>年齢や社歴に関係なく、新しい挑戦を歓迎し、その提案を評価する風土があります。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 社員の声 -->
+<section class="sec" id="voice">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">MEMBERS</span>
+      <h2 class="sec-title reveal">社員の声<span class="sm">実際に働くメンバーが、しごとばについて語ります。</span></h2>
+    </div>
+    <div class="voice-grid">
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">三好</div>
+          <div class="voice-meta"><b>三好さん</b><span>業務部 部長／入社7年目</span></div>
+        </div>
+        <p class="voice-q">「意見を言いやすく、それを正当に評価してくれる会社です」</p>
+        <p>経営層との距離が近く、少人数だからこそ意見を通しやすいのが特徴です。固定観念にとらわれず、自分の考えで業務フローを変えていけますし、それを評価してくれます。受け入れ計画やマニュアルも一人ひとりに合わせて設計しているので、入社後も着実に立ち上がれます。成果を出せば、しっかりキャリアアップにつながります。</p>
+      </div>
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">猪股</div>
+          <div class="voice-meta"><b>猪股さん</b><span>業務部 課長／入社6年目</span></div>
+        </div>
+        <p class="voice-q">「希望を論理立てて伝えれば、5年後はその通りになっていました」</p>
+        <p>裁量を活かせる領域が広く、経営者との距離が近いのが魅力です。筋道を立てて提案すれば、会社の制度も良い方向へ変わっていきます。年齢や勤続年数に関わらず、キャリア志向に応じてチャンスが与えられる。5年前に描いたキャリアを、今そのまま実現できています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1日の流れ -->
+<section class="sec day">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">A DAY</span>
+      <h2 class="sec-title reveal">ある一日の働き方<span class="sm">オンとオフのメリハリを大切にしています。</span></h2>
+    </div>
+    <div class="day-grid">
+      <div class="day-card reveal"><div class="t">09:00</div><div class="bar"></div><h5>出社・朝のミーティング</h5><p>その日の予定とタスクをチームで共有し、優先順位を整理します。</p></div>
+      <div class="day-card reveal"><div class="t">10:00</div><div class="bar"></div><h5>機器の設定・検査</h5><p>手順に沿って機器のキッティングや品質チェックを進める集中タイム。</p></div>
+      <div class="day-card reveal"><div class="t">12:00</div><div class="bar"></div><h5>ランチ・休憩</h5><p>休憩中はチームで気軽に会話。相談ごともこの時間に。</p></div>
+      <div class="day-card reveal"><div class="t">18:00</div><div class="bar"></div><h5>退社</h5><p>残業は月平均20h程度。プライベートの時間も確保できます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 募集要項 -->
+<section class="sec" id="jobs">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">CAREERS</span>
+      <h2 class="sec-title reveal">募集要項<span class="sm">気になる職種から、お気軽にエントリーください。</span></h2>
+    </div>
+    <div class="jobs-grid">
+      <div class="job reveal">
+        <div class="tags"><span class="tag">中途・正社員</span><span class="tag new">異業種からの転職歓迎</span></div>
+        <h3>物流管理スタッフ</h3>
+        <p class="role">倉庫での入出庫・在庫管理を中心に、物流オペレーション全般を担当します。</p>
+        <div class="pay">月給 266,500円〜<small> / 賞与年2回</small></div>
+        <dl>
+          <dt>勤務地</dt><dd>東京都江戸川区</dd>
+          <dt>時間</dt><dd>09:00〜18:00</dd>
+          <dt>休日</dt><dd>年間休日120日</dd>
+          <dt>待遇</dt><dd>交通費支給・残業少なめ</dd>
+        </dl>
+        <a href="#entry" class="btn">この職種に応募する</a>
+      </div>
+      <div class="job reveal">
+        <div class="tags"><span class="tag">中途・正社員</span><span class="tag new">異業種からの転職歓迎</span></div>
+        <h3>IT機器運用スタッフ</h3>
+        <p class="role">PC・通信機器のキッティング（初期設定）や保守・検査を担当します。</p>
+        <div class="pay">年収 350万円〜<small> / 賞与年2回</small></div>
+        <dl>
+          <dt>勤務地</dt><dd>東京都江戸川区</dd>
+          <dt>時間</dt><dd>09:00〜18:00</dd>
+          <dt>休日</dt><dd>年間休日120日</dd>
+          <dt>待遇</dt><dd>残業月平均20h程度・資格取得支援</dd>
+        </dl>
+        <a href="#entry" class="btn">この職種に応募する</a>
+      </div>
+      <div class="job reveal">
+        <div class="tags"><span class="tag">中途・正社員</span><span class="tag">リーダー候補</span></div>
+        <h3>物流・IT機器サポートのリーダー候補</h3>
+        <p class="role">現場の運用を支えながら、将来のチームリーダー・幹部を目指す方を募集します。</p>
+        <div class="pay">年収 445万円〜<small> / 賞与年2回</small></div>
+        <dl>
+          <dt>勤務地</dt><dd>東京都江戸川区</dd>
+          <dt>時間</dt><dd>09:00〜18:00</dd>
+          <dt>休日</dt><dd>年間休日120日</dd>
+          <dt>待遇</dt><dd>残業月平均20h程度・キャリアアップ支援</dd>
+        </dl>
+        <a href="#entry" class="btn">この職種に応募する</a>
+      </div>
+      <div class="job reveal">
+        <div class="tags"><span class="tag">アルバイト・パート</span><span class="tag new">未経験歓迎</span></div>
+        <h3>倉庫内の軽作業スタッフ</h3>
+        <p class="role">倉庫内での仕分け・梱包・セットアップ作業を担当します。フルタイム募集です。</p>
+        <div class="pay">時給 1,400円〜1,550円</div>
+        <dl>
+          <dt>勤務地</dt><dd>東京都江戸川区</dd>
+          <dt>時間</dt><dd>09:00〜18:00</dd>
+          <dt>待遇</dt><dd>交通費全額支給</dd>
+          <dt>歓迎</dt><dd>ブランクのある方も歓迎</dd>
+        </dl>
+        <a href="#entry" class="btn">この職種に応募する</a>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:13px;color:var(--ink-soft);margin-top:24px">※ 掲載内容は変更になる場合があります。最新の詳細条件は面談時にもご案内します。</p>
+  </div>
+</section>
+
+<!-- 応募の流れ -->
+<section class="sec" style="background:var(--sky-soft2)">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">FLOW</span>
+      <h2 class="sec-title reveal">応募から入社までの流れ<span class="sm">まずは「話を聞いてみたい」というご相談も歓迎です。</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n en">1</div><h5>エントリー</h5><p>下のフォームからご連絡ください。</p></div>
+      <div class="step reveal"><div class="n en">2</div><h5>カジュアル面談</h5><p>選考前に、会社の雰囲気や仕事内容を知る場です。</p></div>
+      <div class="step reveal"><div class="n en">3</div><h5>選考・面接</h5><p>お互いの理解を深める時間。経験や志向をお聞かせください。</p></div>
+      <div class="step reveal"><div class="n en">4</div><h5>内定・入社</h5><p>習熟プランに沿って、無理なくスタートできます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">FAQ</span>
+      <h2 class="sec-title reveal">よくある質問</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary class="faq-q"><span class="qm">Q</span>異業種からの転職でも活躍できますか？<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="faq-a">前職の業界を問わず活躍しているメンバーが多数います。業務がISO9001に準拠して手順化されており、入社後の習熟プランも個別に設計するため、これまでの経験を活かしながら着実に立ち上がれます。</div></details>
+      <details class="faq-item reveal"><summary class="faq-q"><span class="qm">Q</span>IT領域の専門知識は必須ですか？<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="faq-a">必須ではありません。手順に沿った業務から始め、実務を通じて専門性を高めていく方が中心です。IT関連の資格取得を会社が費用負担で支援する制度もあります。</div></details>
+      <details class="faq-item reveal"><summary class="faq-q"><span class="qm">Q</span>職場の雰囲気を教えてください。<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="faq-a">経営層との距離が近く、意見を伝えやすい組織です。業務時間は集中、休憩時間は活発に会話、とメリハリのある雰囲気。部署を越えて助け合う文化が根づいています。</div></details>
+      <details class="faq-item reveal"><summary class="faq-q"><span class="qm">Q</span>残業や休日はどのくらいですか？<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="faq-a">年間休日は120日、残業は月平均20時間程度です。オンとオフのメリハリを大切にしており、プライベートの時間も確保しやすい環境です。</div></details>
+      <details class="faq-item reveal"><summary class="faq-q"><span class="qm">Q</span>選考前にカジュアルに話を聞けますか？<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="faq-a">はい、カジュアル面談を歓迎しています。応募を決める前に、仕事内容や働き方をお話しする場としてご活用ください。フォームからお気軽にご連絡いただけます。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 会社概要 -->
+<section class="sec" id="company">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">COMPANY</span>
+      <h2 class="sec-title reveal">会社概要</h2>
+    </div>
+    <div class="company-table reveal">
+      <dl>
+        <dt>会社名</dt><dd>株式会社しごとば（Shigoto-BA）</dd>
+        <dt>設立</dt><dd>2012年3月</dd>
+        <dt>代表者</dt><dd>代表取締役 野津 裕之</dd>
+        <dt>資本金</dt><dd>300万円</dd>
+        <dt>従業員数</dt><dd>約20名（平均年齢40.2歳）</dd>
+        <dt>本社所在地</dt><dd>東京都江戸川区臨海町5-2-2 三共ビル5階</dd>
+        <dt>事業内容</dt><dd>IT機器運用のサポート／ロジスティクスサービス／倉庫内業務システムの制作／販促物制作と在庫管理／メーリングサービス</dd>
+        <dt>グループ</dt><dd>マルソーグループ（マルソー株式会社）</dd>
+        <dt>企業サイト</dt><dd><a href="https://shigotoba.co.jp/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">https://shigotoba.co.jp/</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- エントリーフォーム -->
+<section class="sec cta-form" id="entry">
+  <div class="wrap form-wrap">
+    <div class="center">
+      <span class="eyebrow reveal">ENTRY</span>
+      <h2 class="sec-title reveal">まずは、お気軽に。</h2>
+      <p class="reveal">「応募」でも「話を聞いてみたい」でも構いません。下のフォームからご連絡ください。担当者よりご返信します。</p>
+    </div>
+    <div class="form-card reveal">
+      <div class="form-msg" id="formMsg">フォーム送信後、メーラーが起動します。</div>
+      <form id="entryForm">
+        <div class="form-row">
+          <div class="field full"><label>お名前 <span class="req">必須</span></label><input type="text" name="name" required placeholder=""></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>メールアドレス <span class="req">必須</span></label><input type="email" name="email" required placeholder="例）you@example.com"></div>
+          <div class="field"><label>電話番号</label><input type="tel" name="tel" placeholder="例）090-1234-5678"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>ご希望の職種</label>
+            <select name="job">
+              <option value="まだ決めていない／相談したい">まだ決めていない／相談したい</option>
+              <option value="物流管理スタッフ（正社員）">物流管理スタッフ（正社員）</option>
+              <option value="IT機器運用スタッフ（正社員）">IT機器運用スタッフ（正社員）</option>
+              <option value="リーダー候補（正社員）">リーダー候補（正社員）</option>
+              <option value="倉庫内の軽作業（アルバイト・パート）">倉庫内の軽作業（アルバイト・パート）</option>
+            </select>
+          </div>
+          <div class="field"><label>ご希望の連絡方法</label>
+            <select name="contact">
+              <option value="メール">メール</option>
+              <option value="電話">電話</option>
+              <option value="どちらでも">どちらでも</option>
+            </select>
+          </div>
+        </div>
+        <div class="field full"><label>メッセージ・ご質問など</label><textarea name="message" placeholder="これまでのご経験や、お聞きになりたいことなどをご記入ください。"></textarea></div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-amber">送信</button>
+        </div>
+        <p class="form-note">送信後、メーラーが起動し、入力内容がメール本文に反映されます。<br>ご記入いただいた情報は、採用選考の目的にのみ利用します。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-logo">
+        <b>株式会社しごとば</b>
+        <span class="en">SHIGOTO-BA</span>
+        <p>SUPPORT × LOGISTICS。「IT機器運用」と「販促活動」の総合サポートで、社会の基盤を支えています。</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h6>RECRUIT</h6>
+          <a href="#about">事業のこと</a>
+          <a href="#reason">働く環境</a>
+          <a href="#jobs">募集要項</a>
+          <a href="#entry">エントリー</a>
+        </div>
+        <div class="foot-col">
+          <h6>COMPANY</h6>
+          <a href="https://shigotoba.co.jp/" target="_blank" rel="noopener">企業サイト</a>
+          <a href="https://shigotoba.co.jp/work/" target="_blank" rel="noopener">事業内容</a>
+          <a href="https://shigotoba.co.jp/company/" target="_blank" rel="noopener">会社概要</a>
+          <a href="https://shigotoba.co.jp/contact/" target="_blank" rel="noopener">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© Shigoto-BA Inc. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
+<script>
+// 応募メールの宛先（しごとばの採用ご担当アドレスに差し替えてください）
+const APPLY_EMAIL = "saiyo@shigotoba.co.jp";
+
+document.getElementById('menuToggle').addEventListener('click',function(){
+  document.getElementById('navlinks').classList.toggle('open');
+});
+document.querySelectorAll('#navlinks a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('navlinks').classList.remove('open')});
+});
+
+const io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+// カルーセル
+(function(){
+  const track=document.getElementById('carouselTrack');
+  if(!track)return;
+  const slides=track.children;
+  const total=slides.length;
+  const dotsWrap=document.getElementById('carouselDots');
+  let idx=0,timer=null;
+  for(let i=0;i<total;i++){
+    const d=document.createElement('button');
+    d.className='dot'+(i===0?' active':'');
+    d.setAttribute('aria-label',(i+1)+'枚目へ');
+    d.addEventListener('click',function(){go(i)});
+    dotsWrap.appendChild(d);
+  }
+  const dots=dotsWrap.children;
+  function render(){
+    track.style.transform='translateX(-'+(idx*100)+'%)';
+    for(let i=0;i<dots.length;i++)dots[i].classList.toggle('active',i===idx);
+  }
+  function go(n){idx=(n+total)%total;render()}
+  function next(){go(idx+1)}
+  function prev(){go(idx-1)}
+  function start(){stop();timer=setInterval(next,4500)}
+  function stop(){if(timer){clearInterval(timer);timer=null}}
+  document.getElementById('carouselNext').addEventListener('click',function(){next();start()});
+  document.getElementById('carouselPrev').addEventListener('click',function(){prev();start()});
+  const c=document.getElementById('carousel');
+  c.addEventListener('mouseenter',stop);
+  c.addEventListener('mouseleave',start);
+  // スワイプ対応
+  let sx=0;
+  c.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;stop()},{passive:true});
+  c.addEventListener('touchend',function(e){const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){dx<0?next():prev()}start()},{passive:true});
+  render();start();
+})();
+
+document.getElementById('entryForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  const f=ev.target;
+  const name=f.name.value.trim();
+  const kana=f.kana.value.trim();
+  const email=f.email.value.trim();
+  const tel=f.tel.value.trim();
+  const job=f.job.value;
+  const contact=f.contact.value;
+  const message=f.message.value.trim();
+  const subject="【採用エントリー】"+name+"様（"+job+"）";
+  const body=
+    "▼お名前\n"+name+"（"+kana+"）\n\n"+
+    "▼メールアドレス\n"+email+"\n\n"+
+    "▼電話番号\n"+tel+"\n\n"+
+    "▼ご希望の職種\n"+job+"\n\n"+
+    "▼ご希望の連絡方法\n"+contact+"\n\n"+
+    "▼メッセージ\n"+message+"\n";
+  const url="mailto:"+APPLY_EMAIL+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+  document.getElementById('formMsg').style.display='block';
+  window.location.href=url;
+});
+</script>
+</body>
+</html>
