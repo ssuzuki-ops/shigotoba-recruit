@@ -55,8 +55,7 @@ header{
   border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{display:flex;align-items:center;line-height:1;font-weight:900}
-.logo img{height:50px;width:auto;display:block}
+.logo{display:flex;flex-direction:column;line-height:1;font-weight:900}
 .logo b{font-size:19px;color:var(--ink)}
 .logo span{font-size:11px;color:var(--blue);font-weight:700;letter-spacing:.18em;margin-top:3px}
 .nav-links{display:flex;gap:26px;align-items:center}
@@ -309,7 +308,7 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
 <!-- ヘッダー -->
 <header>
   <div class="wrap nav">
-    <a href="#top" class="logo"><img src="images/logo.png" alt="株式会社しごとば（Shigoto-BA）"></a>
+    <a href="#top" class="logo"><b>株式会社しごとば</b><span class="en">SHIGOTO-BA</span></a>
     <nav class="nav-links" id="navlinks">
       <a href="#about">事業のこと</a>
       <a href="#reason">働く環境</a>
