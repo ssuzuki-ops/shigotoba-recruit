@@ -73,6 +73,8 @@ header{
 .btn-amber:hover{box-shadow:0 12px 26px rgba(255,180,84,.45)}
 .btn-ghost{background:#fff;color:var(--blue);border:2px solid var(--blue);box-shadow:none}
 .btn-ghost:hover{background:var(--sky-soft)}
+.btn-white{background:#fff;color:var(--blue-deep);border:2px solid var(--blue);font-weight:800;box-shadow:0 8px 22px rgba(46,151,212,.28)}
+.btn-white:hover{background:var(--sky-soft);box-shadow:0 12px 28px rgba(46,151,212,.38)}
 .nav .btn{padding:10px 20px}
 .menu-toggle{display:none;background:none;border:none;font-size:26px;color:var(--blue);cursor:pointer;line-height:1}
 
@@ -105,12 +107,14 @@ header{
 .wave{display:block;width:100%;height:60px;margin-top:-1px}
 
 /* ===== 数字 ===== */
-.stat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:40px}
-.stat{background:var(--sky-soft2);border:1px solid var(--line);border-radius:18px;padding:22px 14px;text-align:center;transition:.25s}
-.stat:hover{transform:translateY(-4px);box-shadow:var(--shadow);background:#fff}
-.stat .num{font-family:'Poppins',sans-serif;font-size:30px;font-weight:700;color:var(--blue);line-height:1.1}
-.stat .num small{font-size:15px;font-weight:600}
-.stat .lbl{font-size:12.5px;color:var(--ink-soft);margin-top:6px;font-weight:500}
+.numbers{background:linear-gradient(180deg,#fff 0%,var(--sky-soft) 100%)}
+.numbers .sec-title{font-size:40px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:22px;padding:40px 18px 34px;text-align:center;transition:.25s;box-shadow:var(--shadow-sm)}
+.stat:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.stat .lbl{font-size:16px;color:var(--blue-deep);font-weight:800;letter-spacing:.02em;margin-bottom:14px}
+.stat .num{font-family:'Poppins',sans-serif;font-size:54px;font-weight:700;color:var(--blue);line-height:1.0}
+.stat .num small{font-size:22px;font-weight:600;margin-left:3px}
 
 /* ===== セクション見出し ===== */
 .eyebrow{display:inline-block;font-family:'Poppins',sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--blue);background:var(--sky-soft);padding:6px 16px;border-radius:999px;margin-bottom:16px}
@@ -311,7 +315,7 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
       <a href="#voice">社員の声</a>
       <a href="#jobs">募集要項</a>
       <a href="#faq">よくある質問</a>
-      <a href="#entry" class="btn">エントリー</a>
+      <a href="#entry" class="btn btn-white">エントリー</a>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-label="メニュー">≡</button>
   </div>
@@ -322,7 +326,7 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
   <div class="wrap hero-inner">
     <div class="reveal on">
       <span class="hero-badge">中途・キャリア採用</span>
-      <h1>物流×ITという希少な経験で、<br><span class="hl">市場価値</span>を伸ばす。</h1>
+      <h1>物流×ITという<br>希少な経験で<br><span class="hl">市場価値</span>を伸ばす。</h1>
       <p class="lead">倉庫業務とIT機器運用をかけ合わせた、ほかにはない仕事。落ち着いたチームで専門性を深めながら、長く働けるキャリアを築けます。</p>
       <div class="hero-cta">
         <a href="#jobs" class="btn">募集をみる</a>
@@ -345,27 +349,9 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
         <h4>IT機器運用 × ロジスティクス</h4>
         <p>PC・通信機器を「あずかり、整え、届ける」。社会の基盤を支える仕事です。</p>
       </div>
-      <div class="float-pill p1">年間休日120日</div>
-      <div class="float-pill p2">残業 月平均20h</div>
     </div>
   </div>
   <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M0,30 C240,60 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z"></path></svg>
-</section>
-
-<!-- 数字 -->
-<section class="sec-tight">
-  <div class="wrap center">
-    <span class="eyebrow reveal">NUMBERS</span>
-    <h2 class="sec-title reveal">数字でみる、しごとば</h2>
-    <div class="stat-grid">
-      <div class="stat reveal"><div class="num">2012<small>年</small></div><div class="lbl">設立</div></div>
-      <div class="stat reveal"><div class="num">約20<small>名</small></div><div class="lbl">従業員数</div></div>
-      <div class="stat reveal"><div class="num">120<small>日</small></div><div class="lbl">年間休日</div></div>
-      <div class="stat reveal"><div class="num">20<small>h</small></div><div class="lbl">残業<br>月平均</div></div>
-      <div class="stat reveal"><div class="num">2<small>回</small></div><div class="lbl">賞与<br>(年)</div></div>
-      <div class="stat reveal"><div class="num">9-18<small>時</small></div><div class="lbl">勤務時間</div></div>
-    </div>
-  </div>
 </section>
 
 <!-- about -->
@@ -448,50 +434,6 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
   </div>
 </section>
 
-<!-- 社員の声 -->
-<section class="sec" id="voice">
-  <div class="wrap">
-    <div class="center">
-      <span class="eyebrow reveal">MEMBERS</span>
-      <h2 class="sec-title reveal">社員の声<span class="sm">実際に働くメンバーが、しごとばについて語ります。</span></h2>
-    </div>
-    <div class="voice-grid">
-      <div class="voice reveal">
-        <div class="voice-head">
-          <div class="voice-ava">三好</div>
-          <div class="voice-meta"><b>三好さん</b><span>業務部 部長／入社7年目</span></div>
-        </div>
-        <p class="voice-q">「意見を言いやすく、それを正当に評価してくれる会社です」</p>
-        <p>経営層との距離が近く、少人数だからこそ意見を通しやすいのが特徴です。固定観念にとらわれず、自分の考えで業務フローを変えていけますし、それを評価してくれます。受け入れ計画やマニュアルも一人ひとりに合わせて設計しているので、入社後も着実に立ち上がれます。成果を出せば、しっかりキャリアアップにつながります。</p>
-      </div>
-      <div class="voice reveal">
-        <div class="voice-head">
-          <div class="voice-ava">猪股</div>
-          <div class="voice-meta"><b>猪股さん</b><span>業務部 課長／入社6年目</span></div>
-        </div>
-        <p class="voice-q">「希望を論理立てて伝えれば、5年後はその通りになっていました」</p>
-        <p>裁量を活かせる領域が広く、経営者との距離が近いのが魅力です。筋道を立てて提案すれば、会社の制度も良い方向へ変わっていきます。年齢や勤続年数に関わらず、キャリア志向に応じてチャンスが与えられる。5年前に描いたキャリアを、今そのまま実現できています。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 1日の流れ -->
-<section class="sec day">
-  <div class="wrap">
-    <div class="center">
-      <span class="eyebrow reveal">A DAY</span>
-      <h2 class="sec-title reveal">ある一日の働き方<span class="sm">オンとオフのメリハリを大切にしています。</span></h2>
-    </div>
-    <div class="day-grid">
-      <div class="day-card reveal"><div class="t">09:00</div><div class="bar"></div><h5>出社・朝のミーティング</h5><p>その日の予定とタスクをチームで共有し、優先順位を整理します。</p></div>
-      <div class="day-card reveal"><div class="t">10:00</div><div class="bar"></div><h5>機器の設定・検査</h5><p>手順に沿って機器のキッティングや品質チェックを進める集中タイム。</p></div>
-      <div class="day-card reveal"><div class="t">12:00</div><div class="bar"></div><h5>ランチ・休憩</h5><p>休憩中はチームで気軽に会話。相談ごともこの時間に。</p></div>
-      <div class="day-card reveal"><div class="t">18:00</div><div class="bar"></div><h5>退社</h5><p>残業は月平均20h程度。プライベートの時間も確保できます。</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- 募集要項 -->
 <section class="sec" id="jobs">
   <div class="wrap">
@@ -557,6 +499,50 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
   </div>
 </section>
 
+<!-- 社員の声 -->
+<section class="sec" id="voice">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">MEMBERS</span>
+      <h2 class="sec-title reveal">社員の声<span class="sm">実際に働くメンバーが、しごとばについて語ります。</span></h2>
+    </div>
+    <div class="voice-grid">
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">三好</div>
+          <div class="voice-meta"><b>三好さん</b><span>業務部 部長／入社7年目</span></div>
+        </div>
+        <p class="voice-q">「意見を言いやすく、それを正当に評価してくれる会社です」</p>
+        <p>経営層との距離が近く、少人数だからこそ意見を通しやすいのが特徴です。固定観念にとらわれず、自分の考えで業務フローを変えていけますし、それを評価してくれます。受け入れ計画やマニュアルも一人ひとりに合わせて設計しているので、入社後も着実に立ち上がれます。成果を出せば、しっかりキャリアアップにつながります。</p>
+      </div>
+      <div class="voice reveal">
+        <div class="voice-head">
+          <div class="voice-ava">猪股</div>
+          <div class="voice-meta"><b>猪股さん</b><span>業務部 課長／入社6年目</span></div>
+        </div>
+        <p class="voice-q">「希望を論理立てて伝えれば、5年後はその通りになっていました」</p>
+        <p>裁量を活かせる領域が広く、経営者との距離が近いのが魅力です。筋道を立てて提案すれば、会社の制度も良い方向へ変わっていきます。年齢や勤続年数に関わらず、キャリア志向に応じてチャンスが与えられる。5年前に描いたキャリアを、今そのまま実現できています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1日の流れ -->
+<section class="sec day">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">A DAY</span>
+      <h2 class="sec-title reveal">ある一日の働き方<span class="sm">オンとオフのメリハリを大切にしています。</span></h2>
+    </div>
+    <div class="day-grid">
+      <div class="day-card reveal"><div class="t">09:00</div><div class="bar"></div><h5>出社・朝のミーティング</h5><p>その日の予定とタスクをチームで共有し、優先順位を整理します。</p></div>
+      <div class="day-card reveal"><div class="t">10:00</div><div class="bar"></div><h5>機器の設定・検査</h5><p>手順に沿って機器のキッティングや品質チェックを進める集中タイム。</p></div>
+      <div class="day-card reveal"><div class="t">12:00</div><div class="bar"></div><h5>ランチ・休憩</h5><p>休憩中はチームで気軽に会話。相談ごともこの時間に。</p></div>
+      <div class="day-card reveal"><div class="t">18:00</div><div class="bar"></div><h5>退社</h5><p>残業は月平均20h程度。プライベートの時間も確保できます。</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- 職場の風景（カルーセル） -->
 <section class="sec" id="workplace" style="background:var(--sky-soft2)">
   <div class="wrap">
@@ -578,6 +564,22 @@ footer{background:#15324a;color:#cdd9e3;padding:54px 0 28px}
       <button class="carousel-btn next" id="carouselNext" aria-label="次へ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
     <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+
+<!-- 数字でみる -->
+<section class="sec numbers" id="numbers">
+  <div class="wrap center">
+    <span class="eyebrow reveal">NUMBERS</span>
+    <h2 class="sec-title reveal">数字でみる、しごとば</h2>
+    <div class="stat-grid">
+      <div class="stat reveal"><div class="lbl">男女比</div><div class="num">ー</div></div>
+      <div class="stat reveal"><div class="lbl">平均年齢</div><div class="num">ー<small>歳</small></div></div>
+      <div class="stat reveal"><div class="lbl">血液型割合</div><div class="num">ー</div></div>
+      <div class="stat reveal"><div class="lbl">項目04</div><div class="num">ー</div></div>
+      <div class="stat reveal"><div class="lbl">項目05</div><div class="num">ー</div></div>
+      <div class="stat reveal"><div class="lbl">項目06</div><div class="num">ー</div></div>
+    </div>
   </div>
 </section>
 
